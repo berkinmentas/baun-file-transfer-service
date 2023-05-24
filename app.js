@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const path = require("path");
-// const port = 5500;
+const port = 5500;
 
 app.get("/", (req, res) => {
   res.json({
@@ -24,6 +24,6 @@ app.get("/files", (req, res) => {
   res.sendFile(filePath);
 });
 
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
