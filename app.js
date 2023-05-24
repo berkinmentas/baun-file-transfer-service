@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const path = require("path");
-const port = 4001;
+const port = 4000;
 
 app.get("/", (req, res) => {
   res.json({
